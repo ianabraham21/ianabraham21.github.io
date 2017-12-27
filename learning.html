@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Active Learning</title>
+		<title>Learning</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -44,8 +44,20 @@
 
 							-->
 							<ul>
-								<li><a href="index.html" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="index.html" id="index-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
 							</ul>
+                            <ul>
+                                <li><a href="#active_learning" id="bioinspired-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Active Learning</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#data-driven_control" id="shape_estimation-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Data-driven Control</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#real-time_control" id="object_localization-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Real-time Control</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Publications</span></a></li>
+                            </ul>
 						</nav>
 
 				</div>
@@ -75,96 +87,53 @@
 					</section> -->
 
 				<!-- Portfolio -->
-					<section id="activelearning" class="two">
+					<section id="active_learning" class="two">
 						<div class="container">
 
 							<header>
 								<h2>Active Learning</h2>
 							</header>
 
-							<p><img src="images/rat_whisking.gif" alt="rat whisking" align="left">
-                             This part of my work entails looking towards biology for inspiration towards the development of algorithms that exploit sensor dynamics for active sensings. In particular, rat vibrissae is studied as a focal point towards understanding how the sense touch can be used more effectively in robotic systems. <br/>
-                            Currently, I am implementing active sensing and exploration strategies that utilize the structure of the whisker arrray for shape estimation and localization of objects.
-                            </p> <br/>
-
+							<p><img src="images/robot_learning.gif" alt="robot learning" align="left">
+                            How can a robot actively learn about the environment and itself in an algorithmic manner that is safe and stable? This part of my research thrust involves developing active learning strategies that ensure robotic systems are controlled in such a way that is efficient for fast learning.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="data-driven_control" class="two">
+                        <div class="container">
                             <header>
                                 <h2>Data-driven Control</h2>
                             </header>
 
-                            <p><img src="images/shape_estimation.gif" alt="rat whisking" align="right">
-                             This part of my work entails looking towards biology for inspiration towards the development of algorithms that exploit sensor dynamics for active sensings. In particular, rat vibrissae is studied as a focal point towards understanding how the sense touch can be used more effectively in robotic systems. Currently, I am implementing active sensing and exploration strategies that utilize the structure of the whisker arrray for shape estimation and localization of objects.
+                            <p><img src="images/active_recovery.gif" alt="data-driven control" align="right">
+                            Using the method for active learning, this part of my research involves using data to drive control decisions for robotic systems based on sensor-based models of dynamical systems.
                             </p>
-
+                        </div>
+                    </section>
+                    <section id="real-time_control" class="two">
+                        <div class="container">
                             <header>
                                 <h2>Real-time Control</h2>
                             </header>
 
-                            <p><img src="images/localization_of_objects2.gif" alt="rat whisking" align="left">
-                             This part of my work entails looking towards biology for inspiration towards the development of algorithms that exploit sensor dynamics for active sensings. In particular, rat vibrissae is studied as a focal point towards understanding how the sense touch can be used more effectively in robotic systems. Currently, I am implementing active sensing and exploration strategies that utilize the structure of the whisker arrray for shape estimation and localization of objects.
+                            <p><img src="images/realtime_control.gif" alt="object localization" align="left">
+                            Much of the mentioned research active learning relies on nonlinear control methods that are able to run in real-time.
                             </p>
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image"><img src="images/shape_estimation.gif" alt="" /></a>
-										<header>
-											<h3>Object Shape Estimation</h3>
-										</header>
-									</article>
-                                <article class="item">
-                                    <a href="#" class="image"><img src="images/robot_learning.gif" alt="" /></a>
-                                    <header>
-                                        <h3>Active Learning</h3>
-                                    </header>
-                                </article>
-                                </div>
-								<div class="4u 12u$(mobile)">
-                                    <article class="item">
-                                        <a href="#" class="image"><img src="images/localization_of_objects2.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Tactile-based Object Localization</h3>
-                                        </header>
-                                    </article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/active_recovery.gif" alt="" /></a>
-										<header>
-											<h3>Data-driven Control</h3>
-										</header>
-									</article>
-								</div>
-                                <div class="4u 12u$(mobile)">
-                                    <article class="item">
-                                        <a href="sensing.html" class="image"><img src="images/rat_whisking.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Bioinspired Sensing</h3>
-                                        </header>
-                                    </article>
-                                    <article class="item">
-                                        <a href="#" class="image fit"><img src="images/realtime_control.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Real-time Control</h3>
-                                        </header>
-                                    </article>
-                                </div>
-							</div>
-
 						</div>
 					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+                    <section id="publications" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Publications</h2>
+                                <p>I. Abraham, G. de la Torre, and T. D. Murphey, <a href="https://nxr.northwestern.edu/publications/model-based-control-using-koopman">"Model-Based Control using Koopman Operators,"</a> in Proceedings of Robotics: Science and Systems,  2017. doi: 10.15607/RSS.2017.XIII.052.
+                                </br></br>
+                                A. Mavrommati, E. Tzorakoleftherakis, I. Abraham and T. D. Murphey, <a href="http://ieeexplore.ieee.org/document/8114522/">"Real-Time Area Coverage and Target Localization Using Receding-Horizon Ergodic Exploration,"</a> in IEEE Transactions on Robotics, vol. PP, no. 99, pp. 1-19. doi: 10.1109/TRO.2017.2766265
+                                </p>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
-
-							<p>I recieved by B.S. degree in Mechanical Engineering from Rutgers University, New Brunswick, NJ in 2014. I received my M.S. degree in Mechanical Engineering from Northwestern University and I am currently a PhD candidate in the Neuroscience and Robotics Lab (NxR) at Northwestern University, Evanston, IL. My current research interests are real-time algorithms for active sensing, learning, and data-driven control in robotic systems.</p>
-
-						</div>
-					</section>
+                            </header>
+                        </div>
+                    </section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
