@@ -44,8 +44,20 @@
 
 							-->
 							<ul>
-								<li><a href="index.html" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="index.html" id="index-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
 							</ul>
+                            <ul>
+                                <li><a href="#bioinspired" id="bioinspired-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Bioinspired Sensing</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#shape_estimation" id="shape_estimation-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Object Shape Estimation</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#object_localization" id="object_localization-link" class="skel-layers-ignoreHref"><span class="icon fa-balance-scale">Object Localization</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Publications</span></a></li>
+                            </ul>
 						</nav>
 
 				</div>
@@ -64,94 +76,61 @@
 		<!-- Main -->
 			<div id="main">
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
+					<!-- <section id="top" class="one dark cover">
 						<div class="container">
 
 							<header>
                                 <h2 class="alt"><strong>Bioinspired Sensing</strong></h2>
 							</header>
 
-							<!-- <footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer> -->
-
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Portfolio -->
 					<section id="bioinspired" class="two">
 						<div class="container">
 
-							<!-- <header>
-								<h2>Research</h2>
-							</header> -->
-
-							<p><img src="images/rat_whisking.gif" alt="rat whisking" align="left">
-                            This part of my work entails looking towards biology for inspiration towards the development of algorithms that exploit sensor dynamics for active sensings. In particular, rat vibrissae is studied as a focal point towards understanding how the sense touch can be used more effectively in robotic systems. <br/>
-                            Currently, I am implementing active sensing and exploration strategies that utilize the structure of the whisker arrray for shape estimation and localization of objects.
-                            </p>
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image"><img src="images/shape_estimation.gif" alt="" /></a>
-										<header>
-											<h3>Object Shape Estimation</h3>
-										</header>
-									</article>
-                                <article class="item">
-                                    <a href="#" class="image"><img src="images/robot_learning.gif" alt="" /></a>
-                                    <header>
-                                        <h3>Active Learning</h3>
-                                    </header>
-                                </article>
-                                </div>
-								<div class="4u 12u$(mobile)">
-                                    <article class="item">
-                                        <a href="#" class="image"><img src="images/localization_of_objects2.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Tactile-based Object Localization</h3>
-                                        </header>
-                                    </article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/active_recovery.gif" alt="" /></a>
-										<header>
-											<h3>Data-driven Control</h3>
-										</header>
-									</article>
-								</div>
-                                <div class="4u 12u$(mobile)">
-                                    <article class="item">
-                                        <a href="sensing.html" class="image"><img src="images/rat_whisking.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Bioinspired Sensing</h3>
-                                        </header>
-                                    </article>
-                                    <article class="item">
-                                        <a href="#" class="image fit"><img src="images/realtime_control.gif" alt="" /></a>
-                                        <header>
-                                            <h3>Real-time Control</h3>
-                                        </header>
-                                    </article>
-                                </div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
 							<header>
-								<h2>About Me</h2>
+								<h2>Bioinspired Sensing</h2>
 							</header>
 
-							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+							<p><img src="images/rat_whisking.gif" alt="rat whisking" align="left">
+                            Biology is used as inspiration towards the development of algorithms for robotic systems that exploit sensor dynamics for active sensing. In particular, rat vibrissae is studied as a focal point towards understanding how the sense of touch can be used more effectively in robotic systems. <br/>
+                            Currently, I am implementing active sensing and exploration strategies that utilize the structure of the whisker array for shape estimation and localization of objects.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="shape_estimation" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Object Shape Estimation</h2>
+                            </header>
 
-							<p>I recieved by B.S. degree in Mechanical Engineering from Rutgers University, New Brunswick, NJ in 2014. I received my M.S. degree in Mechanical Engineering from Northwestern University and I am currently a PhD candidate in the Neuroscience and Robotics Lab (NxR) at Northwestern University, Evanston, IL. My current research interests are real-time algorithms for active sensing, learning, and data-driven control in robotic systems.</p>
+                            <p><img src="images/shape_estimation.gif" alt="shape estimation" align="right">
+                            Using the simplest form of tactile sensing, binary collisions, a low-resolution binary sensor can be used to autonomosly estimate the shape of objects when the robot control is directed via information-based ergodic policies.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="object_localization" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Object Localization</h2>
+                            </header>
 
+                            <p><img src="images/localization_of_objects2.gif" alt="object localization" align="left">
+                            Once the shape of an object (or map) has been estimated, the original information encoded in the map from the binary sensors can be used as feature landmarks for information-based localization. This is particularly useful in scenarios where a robot only has tactile sensors and must locate objects that have been previously encountered and explored.
+                            </p>
 						</div>
 					</section>
+
+                    <section id="publications" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Publications</h2>
+                                <p></p>
+                            </header>
+                        </div>
+                    </section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
